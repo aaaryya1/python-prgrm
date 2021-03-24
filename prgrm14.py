@@ -1,4 +1,5 @@
-sum=0
-n=int(input("enter number:"))
-sum=(n+ ((n*10)+n) + ((n*100)+(n*10)+n))
-print(n,"+",((n*10)+n),"+",((n*100)+(n*10)+n),"=",sum)
+num = input("Enter a number:")
+result = 0
+for i in range(1, 4):
+    result = result + int(num * i)
+print("result of", num, "+", num * 2, "+", num * 3, " = ", result)
